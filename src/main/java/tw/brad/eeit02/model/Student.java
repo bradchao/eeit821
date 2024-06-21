@@ -1,5 +1,7 @@
 package tw.brad.eeit02.model;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 import java.util.LinkedList;
@@ -8,6 +10,7 @@ import java.util.List;
 public class Student {
     @NotNull
     private Integer id;
+    @NotBlank
     private String name;
     private Double score;
     private Boolean gender;
